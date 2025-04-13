@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+     width: 100vw;
+     height: 100vh;
+     background-image: url(./Bias.jpeg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color:black;
+     font-family: "ROBOTO" sans-serif;
+}
+.container{
+    background-color:lightseagreen;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.container h1{
+    font-size: 50px;
+    font-weight: 900;
+  
+}
+ button{
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: navajowhite;
+    color:black;
+    font-size: 20px;
+ }
+ button:hover{
+    background-color:plum;
+ }
+ 
