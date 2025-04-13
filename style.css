@@ -12,7 +12,7 @@ html, body {
 body{
      width: 100vw;
      height: 100vh;
-     background-image: url(./Bias.jpeg);
+     background-image: url(./resources/Bias.jpeg);
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed; 
@@ -23,7 +23,7 @@ body{
      font-family: "ROBOTO" sans-serif;
 }
 .container{
-    background-color:lightseagreen;
+    background-color:yellowgreen;
     padding: 40px;
     border-radius: 10px;
     display: flex;
