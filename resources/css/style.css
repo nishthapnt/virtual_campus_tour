@@ -12,7 +12,7 @@ html, body {
 body{
      width: 100vw;
      height: 100vh;
-     background-image: url(./resources/Bias.jpeg);
+     background-image: url(./resources/college-1.avif);
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed; 
@@ -23,7 +23,8 @@ body{
      font-family: "ROBOTO" sans-serif;
 }
 .container{
-    background-color:yellowgreen;
+    background-color:lavenderblush; 
+    box-shadow:0cqmin;
     padding: 40px;
     border-radius: 10px;
     display: flex;
@@ -37,7 +38,7 @@ body{
     font-weight: 900;
   
 }
- button{
+button{
     padding: 15px 25px;
     border-radius: 10px;
     border: none;
