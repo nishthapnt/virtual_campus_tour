@@ -7,7 +7,7 @@
 }
 
 html, body {
-  height: 100%;
+  height: 90%;
   width: 100%;
   font-family: 'Raleway', sans-serif;
   overflow: hidden;
@@ -43,9 +43,9 @@ body {
   backdrop-filter: blur(12px);
   text-align: center;
   box-shadow:0 8px 30px rgba(0, 0, 0, 0.3);
-  transform: scale(0.5) translateY(0);
+  transform: scale(0.8) translateY(0);
   opacity: 0;
-  animation: zoomSlide 2s ease forwards;
+  animation: zoomSlide 3s ease forwards;
 }
 
 .container h1 {
@@ -82,11 +82,11 @@ body {
 /* Animation */
 @keyframes zoomSlide {
   0% {
-    transform: scale(0.3) translateY(0px);
+    transform: scale(1) translateY(1px);
     opacity: 0;
   }
   100% {
-    transform: scale(1) translateY(-60px); /* just a little upward */
+    transform: scale(1) translateY(-60px); 
     opacity: 1;
   }
 }
@@ -96,6 +96,6 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.09);
   }
 }
