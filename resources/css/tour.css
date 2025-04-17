@@ -1,55 +1,164 @@
-*{
-    background-color: lightblue;
-    border: 1px solid blue;
-}
-body{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 1px solid grey */
 }
 
-.logo-container{
-    display: flex;
-    align-items: center;
-    
-    
+body {
+    background-color: #e6f2ff;
+    padding:0;
+    margin:0;
 }
 
-.logo-text{
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-    
-}
-
-.map-image{
-    width: 100%;
-    height: auto;
-    max-width: 100px; /* Set a maximum width for the image */
-    margin: 0 auto; /* Center the image horizontally */
-}
 .page-container {
     display: flex;
     height: 100vh;
+}
 
-  }
-  
-.side-bar{
-    
-    flex: 0 0 20%;  /* 0: don't grow, 0: don't shrink, 20% width */
-    display:flex;
+.side-bar {
+    flex: 0 0 22%;
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.main-content{
-    flex: 0 0 80%;  /* Takes up remaining space (80%) */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
-.nav-list{
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.map-image {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.map-image:hover {
+    transform: scale(1.25);
+    transition: all 0.3s ease;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-list {
     list-style: none;
-    
+    padding: 0;
 }
-.nav-list a{
+
+.nav-list li {
+    margin: 15px 0;
+}
+
+.nav-list a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
+
+.nav-list a:hover {
+    background-color: #0066cc;
+    transform: translateX(10px);
+}
+
+.nav-list i {
+    margin-right: 10px;
+}
+
+.main {
+    flex: 1;
+    padding: 50px;
+    
+    color: #ffffff;
+    background-image: url(https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D ) ;
+    background-size: cover;       /* Ensures it covers the area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+}
+
+.main-content {
+    backdrop-filter: blur(10px);
+    background-color: rgba(250, 250, 250, 0.178);
+    padding: 20px;
+    border-radius: 5%;
+    width: 50%;
+    position: relative;
+    opacity: 1;
+    animation: slideUp 5s ease-out, bounce 15s infinite;  /* Combining slide-up and bounce effects */
+}
+
+/* Slide-up effect */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px); /* Start from below the screen */
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0); /* Settle in the final position */
+        opacity: 1;  /* Fade in */
+    }
+}
+
+/* Bounce effect */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px); /* Move slightly up */
+    }
+    50% {
+        transform: translateY(0); /* Return to normal */
+    }
+    75% {
+        transform: translateY(-20px); /* Slight bounce up */
+    }
+    100% {
+        transform: translateY(0); /* Settle */
+    }
+}
+
+.main-content h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+
