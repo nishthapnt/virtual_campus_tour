@@ -138,13 +138,13 @@ nav {
         transform: translateY(0);
     }
     25% {
-        transform: translateY(-20px); /* Move slightly up */
+        transform: translateY(-30px); /* Move slightly up */
     }
     50% {
         transform: translateY(0); /* Return to normal */
     }
     75% {
-        transform: translateY(-20px); /* Slight bounce up */
+        transform: translateY(-30px); /* Slight bounce up */
     }
     100% {
         transform: translateY(0); /* Settle */
